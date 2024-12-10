@@ -63,6 +63,7 @@ const CartReducer = () => {
               <p>{item.name}</p>
               <p>{item.price}</p>
               <p>{item.quantity}</p>
+              <p>{(item.quantity) * (item.price)}</p>
               <button
                 onClick={() =>
                   dispatch({ type: "increaseQTY", payload: item.id })
